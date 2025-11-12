@@ -1,0 +1,962 @@
+@font-face {
+    font-family: "Bebas";
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(fonts/Roboto-Light.ttf)
+}
+
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url(fonts/Roboto-Medium.ttf)
+}
+
+/*reset css*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-contech: #3066BE;
+    background: radial-gradient(circle,rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+h2 {
+    font-family: "Bebas";
+    font-size: 28px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+.banner {
+    height: 80vh;
+    background: radial-gradient(circle,rgba(48, 102, 190, 0.300) 0%, rgba(48, 102, 190, 0.300) 58%, rgba(52, 170, 216, 0.300) 100%);
+    background-repeat: no-repeat;
+}
+
+header button {
+    display: none;
+    color: var(--azul-contech);
+}
+
+header {
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header img {
+    width: 15%;
+    display: flex;  
+    margin-right: 15%;
+
+}
+
+.menu a {
+    font-family: "Roboto Light";
+    font-size: 18px;
+
+    text-decoration: none;
+    color: black;
+    transition: 500ms ease;
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+
+    
+}
+
+.menu a:hover {
+     color: #B9B541;
+    font-family: "Roboto Medium";
+}
+
+header {
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.conteudo-banner {
+    height: calc(100vh - 280px);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 90px;
+}
+
+
+.conteudo-banner p {
+    padding: 20px;
+
+    color: rgb(0, 0, 0);
+
+    font-family: "Bebas";
+    font-size: 60px;
+
+    text-align: left;
+    line-height: 1.8; 
+}
+
+.conteudo-banner span{
+    color: #3066BE;
+}
+
+#sobre {
+    height: 650px;
+    padding: 100px 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+#sobre h2 {
+    margin-bottom: 30px;
+}
+
+
+#sobre p {
+    font-size: 18px;
+    font-family: "Philosopher";
+
+    text-align: left;
+
+    line-height: 1.8;
+
+}
+
+#solucoes {
+    text-align: left;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#solucoes h2 {
+    margin-bottom: 50px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    height: 350px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    background: radial-gradient(circle,rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
+
+
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.card img {
+    height: 75%;
+    width: 90%;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+
+.card button {
+    width: 90%;
+    height: 70px;
+
+    background-color: var(--degrade);
+
+    border: none;
+    border-radius: 2px;
+
+    color: white;
+
+    font-family: "Rounded sans serif 7";
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: background-color 500ms ease;
+}
+
+.card button:hover {
+    background-color: #A63D17;
+}
+
+#portifolio .container-grid {
+    max-width: 100%;
+    width: 100%;
+    height: 700px;
+    padding: 0%;
+
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
+
+    background-color: #001234;
+    text-align: center;
+
+
+}
+
+#portifolio img {
+    margin: auto;
+    width: 544px;
+
+
+    margin-top: auto;
+    margin-bottom: 50px;
+
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#portifolio {
+    height: 600px;
+    margin-bottom: 100px;
+
+}
+
+#portifolio h2 {
+    height: 100px;
+
+    font-family: "Rounded sans serif 7";
+    font-size: 28px;
+
+    text-decoration: none;
+    line-height: 1.5;
+    color: white;
+
+    margin-bottom: 50px;
+    padding-top: 25px;
+    margin: auto;
+
+}
+
+#depoimentos .titulo {
+    text-align: left;
+    font-family: "Rounded sans serif 7";
+    font-size: 28px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+#depoimentos .card-depoimentos {
+    width: 600px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    margin-bottom: 70px;
+
+
+}
+
+.card-depoimentos p {
+    font-family: "Philosopher";
+    font-size: 16px;
+
+    padding: 20px;
+
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.card-depoimentos img {
+    margin-right: 20px;
+    height: 50px;
+}
+
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 50px;
+    padding-top: 0;
+
+    background-color: #616E87;
+
+}
+
+#divisoria {
+    height: 200px;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #001234;
+    background-image: url(img/divisoria.png);
+
+    background-size: 100vw 100%;
+
+}
+
+
+#contato h2 {
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#contato form {
+    width: 650px;
+    height: 550px;
+
+    margin: auto;
+    padding: 40px 0;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: #BAC7E2;
+
+
+    border: 1px solid #0F1F3C;
+
+    color: black;
+    font-family: "Philosopher";
+    font-size: 18px;
+
+}
+
+.campo {
+    width: 80%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+.campo-descricao {
+    width: 80%;
+    height: 30%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.campo input {
+    height: 40px;
+
+
+    color: #001234;
+    background-color: white;
+
+    border: 1px solid #0F1F3C;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    height: 130px;
+    color: #0F1F3C;
+    background-color: white;
+
+    border: 1px solid #0F1F3C;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 10px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Philosopher";
+    font-size: 18px;
+
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid #F25922;
+    border: none;
+}
+
+#contato form button {
+    height: 50px;
+    width: 60%;
+
+    background-color: #F25922;
+    color: white;
+
+    border: 1px solid #C84A1C;
+    border-radius: 4px;
+
+    font-size: 18px;
+    font-family: "Philosopher";
+    font-weight: 800;
+
+    margin-top: 10px;
+    padding-top: 5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+    margin-top: 40px;
+    margin: auto;
+
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #C84A1C;
+}
+
+footer {
+    height: 290px;
+
+    background-color: #001234;
+}
+
+footer .container-grid {
+    height: 100%;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.redes-sociais a {
+    height: 50%;
+    margin: auto;
+
+    margin-left: 8px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    color: white;
+    font-family: "Philosopher";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.numero {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.email {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.redes-sociais svg {
+    height: 22px;
+    color: white;
+}
+
+
+.redes-sociais svg:hover {
+    color: var(--laranja-helpgame);
+}
+
+
+.menu-fechado {
+    display: none;
+}
+
+
+#icone-barras {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: var(--azul-contech);
+    }
+
+
+
+    nav.menu {
+        height: 300px;
+        width: 250px;
+
+        padding: 0px 30px;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #3066be5b;
+
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+    }
+
+    #sobre {
+        padding: 100px 15%;
+
+    }
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+
+
+    #sobre {
+        padding: 80px 15%;
+
+    }
+
+    #sobre h2 {
+        margin-top: 40px;
+    }
+
+    #sobre p {
+        margin-bottom: 15px;
+    }
+
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+
+    .card {
+        height: 400px;
+
+
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 40%;
+    }
+
+    .card img {
+        margin: auto;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    footer .container-grid {
+        padding: 80px;
+        flex-direction: column;
+    }
+
+    footer img {
+        margin-bottom: 100px;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+
+
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+    .conteudo-banner img {
+        height: 145px;
+        width: 100px;
+
+    }
+
+
+    #sobre {
+        margin-top: 30px;
+
+        padding-top: 20px;
+        height: unset;
+
+        padding-bottom: unset;
+    }
+
+    #sobre p {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        flex-basis: 45%;
+    }
+
+    #solucoes h2 {
+        padding-left: 20px;
+
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    #depoimentos p {
+        width: 75%
+    }
+
+    #depoimentos {
+        height: unset;
+    }
+
+    #depoimentos .titulo img {
+        width: 138px;
+        height: 25px;
+    }
+
+
+    #depoimentos .card-depoimentos {
+        margin-bottom: 50px;
+        width: unset;
+    }
+
+    .card-depoimentos p {
+        padding: 10px;
+    }
+
+    .card-depoimentos img {
+        margin-right: 10px;
+    }
+
+    #divisoria {
+        height: 150px;
+        background-image: none;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .conteudo-banner p {
+
+        padding-bottom: 30px;
+        height: unset;
+        font-size: 20px;
+    }
+
+    .conteudo-banner img {
+        height: 125px;
+        width: 80px;
+        margin-bottom: 30px;
+
+    }
+
+    #sobre {
+        padding-top: 10px;
+        height: unset;
+
+    }
+
+
+
+
+
+    #solucoes,
+    #contato {
+        margin-bottom: unset;
+    }
+
+    #portifolio {
+        height: unset;
+        font-size: 24px;
+        margin-bottom: unset;
+    }
+
+    #portifolio img {
+        width: 75%;
+    }
+
+    .campo,
+    .campo-descricao,
+    #contato form button {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .conteudo-banner p {
+        font-size: 18px;
+    }
+
+    .conteudo-banner img {
+        height: 125px;
+        width: 90px;
+
+    }
+
+    .container-grid {
+        width: 90%;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    .banner {
+        background-size: cover;
+    }
+
+
+    nav.menu {
+        width: 100%;
+    }
+
+    #sobre {
+        padding-right: 0px;
+        padding-left: 0px;
+
+        padding-top: 10px;
+        margin-bottom: 30px;
+
+
+    }
+
+    #sobre p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #solucoes.container-grid {
+        width: 100%;
+        margin: unset;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+
+        gap: 40px;
+
+        overflow-x: auto;
+    }
+
+    .card {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+    }
+
+    .card:first-child {
+        margin-left: 30px;
+    }
+
+    .card:last-child {
+        margin-right: 30px;
+    }
+
+    #portifolio h2 {
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+
+
+    #portifolio .container-grid {
+        padding-bottom: 60px;
+        height: unset;
+    }
+
+
+    #contato {
+        background-color: #BAC7E2;
+        height: unset;
+        padding: 0;
+        padding-top: 0;
+    }
+
+    #contato h2 {
+        color: black;
+        margin-bottom: unset
+    }
+
+    #contato form {
+        border: 0px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #contato form button {
+        width: 55%;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 16px;
+    }
+
+    #depoimentos .titulo img {
+        width: 100px;
+        height: 18px;
+    }
+
+    #depoimentos .container-grid {
+        padding-top: unset;
+        height: unset;
+
+    }
+}

@@ -23,7 +23,7 @@
 
 :root {
     --azul-contech: #3066BE;
-    background: radial-gradient(circle,rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
+    --background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
 }
 
 body {
@@ -46,11 +46,6 @@ html {
     margin: 0 auto;
 }
 
-.banner {
-    height: 80vh;
-    background: radial-gradient(circle,rgba(48, 102, 190, 0.300) 0%, rgba(48, 102, 190, 0.300) 58%, rgba(52, 170, 216, 0.300) 100%);
-    background-repeat: no-repeat;
-}
 
 header button {
     display: none;
@@ -81,7 +76,7 @@ header .container-grid {
 
 header img {
     width: 15%;
-    display: flex;  
+    display: flex;
     margin-right: 15%;
 
 }
@@ -96,11 +91,11 @@ header img {
     text-decoration: underline transparent;
     transition: text-decoration 500ms ease;
 
-    
+
 }
 
 .menu a:hover {
-     color: #B9B541;
+    color: #B9B541;
     font-family: "Roboto Medium";
 }
 
@@ -109,74 +104,151 @@ header {
     /* Cor do texto */
     padding: 20px;
     /* Espaçamento interno */
-    text-align: center;
+    text-align: left;
     /* Centraliza o texto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Sombra */
 }
 
+.banner {
+    height: 60vh;
+    background: radial-gradient(circle, rgba(48, 102, 190, 0.300) 0%, rgba(48, 102, 190, 0.300) 58%, rgba(52, 170, 216, 0.300) 100%);
+    background-repeat: no-repeat;
+}
+
 .conteudo-banner {
-    height: calc(100vh - 280px);
-
+    height: 60vh;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
 
-    margin-top: 90px;
+    margin-top: 2%;
+
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
 .conteudo-banner p {
-    padding: 20px;
-
-    color: rgb(0, 0, 0);
+    width: 800px;
+    color: black;
 
     font-family: "Bebas";
     font-size: 60px;
 
     text-align: left;
-    line-height: 1.8; 
+    line-height: 1.8;
+
+    letter-spacing: 2px;
 }
 
-.conteudo-banner span{
+.conteudo-banner b {
+    width: 530px;
+    background: local;
+    background-color: #3066BE;
+
+    border-radius: 10px;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: white;
+    font-weight: 300;
+}
+
+.conteudo-banner span {
     color: #3066BE;
 }
 
-#sobre {
-    height: 650px;
-    padding: 100px 25%;
+#sobre p {
+    font-size: 24px;
+    font-family: "Roboto Light";
+    color: black;
 
+    text-align: left;
+    line-height: 1.8;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 12px;
+}
+
+#sobre b {
+    color: #3066BE;
+    font-family: "Roboto Medium";
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.texto-button {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    padding-bottom: 2%;
+}
+
+.texto-button button {
+    width: 40%;
+    background: local;
+    background-color: #3066BE;
+    padding: 1%;
+  
+
+    font-size: 28px;
+    letter-spacing: 1px;
+
+    font-family: "Bebas";
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+    transition: background-color 500ms;
+}
+
+#sobre button:hover {
+    width: 42%;
+    font-size: 30px;
+    background-color: #244f96;
+
+}
+
+#sobre {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2%;
+
+    height: 500px;
+    padding: 80px 25%;
+    margin-bottom: 10%;
+}
+
+#sobre img {
+    width: 40%;
+}
+
+#newsletter{
     text-align: center;
+
+    padding-bottom: 2%;
 }
 
-#sobre h2 {
-    margin-bottom: 30px;
-}
-
-
-#sobre p {
-    font-size: 18px;
-    font-family: "Philosopher";
-
-    text-align: left;
-
-    line-height: 1.8;
-
-}
-
-#solucoes {
-    text-align: left;
-
-    padding-bottom: 100px;
-    margin-bottom: 100px;
-}
-
-#solucoes h2 {
+#newsletter h2 {
     margin-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: 2%;
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+
+#newsletter b {
+    color: #3066BE;
+    font-weight: 300;
 }
 
 .container-cards {
@@ -196,7 +268,7 @@ header {
     padding-bottom: 20px;
     margin-bottom: 20px;
 
-    background: radial-gradient(circle,rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
+    background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
 
 
     border-radius: 4px;

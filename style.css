@@ -111,7 +111,8 @@ header {
 }
 
 .banner {
-    height: 60vh;
+    height: 100%;
+    width: 100%;
     background: radial-gradient(circle, rgba(48, 102, 190, 0.300) 0%, rgba(48, 102, 190, 0.300) 58%, rgba(52, 170, 216, 0.300) 100%);
     background-repeat: no-repeat;
 }
@@ -121,11 +122,9 @@ header {
     display: flex;
     justify-content: center;
 
-    margin-top: 2%;
-
     flex-direction: column;
     align-items: flex-start;
-}
+margin-top: 5%;}
 
 
 .conteudo-banner p {
@@ -164,11 +163,9 @@ header {
     color: black;
 
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.9;
 
-    padding-bottom: 12px;
-
-    margin-bottom: 12px;
+    margin-bottom: 2%;
 }
 
 #sobre b {
@@ -183,16 +180,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    padding-bottom: 2%;
 }
 
 .texto-button button {
     width: 40%;
     background: local;
     background-color: #3066BE;
-    padding: 1%;
-  
+    padding: 2%;
+
 
     font-size: 28px;
     letter-spacing: 1px;
@@ -204,6 +199,10 @@ header {
     border-radius: 10px;
 
     transition: background-color 500ms;
+
+
+    margin-top: 8%;
+    align-items: baseline;
 }
 
 #sobre button:hover {
@@ -219,24 +218,24 @@ header {
 
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
-    margin: 2%;
+    margin-top: 5%;
 
-    height: 500px;
-    padding: 80px 25%;
+    height: 400px;
+
     margin-bottom: 10%;
 }
 
 #sobre img {
-    width: 40%;
+    width: 30%;
+    margin-right: 5%;
 }
 
-#newsletter{
-    height: 150vh;
+#newsletter {
+    height: 130vh;
     text-align: center;
 
-    padding-bottom: 2%;
 }
 
 #newsletter h2 {
@@ -244,7 +243,7 @@ header {
     font-size: 60px;
     letter-spacing: 2%;
     font-weight: 300;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 #newsletter b {
@@ -267,7 +266,7 @@ header {
     align-items: center;
 
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 
     background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
 
@@ -300,7 +299,7 @@ header {
 
 .card button {
     width: 100%;
-    height: 80%;
+    height: 90%;
 
     background-color: var(--background);
 
@@ -322,60 +321,54 @@ header {
     background-color: #3066BE;
 }
 
-#portifolio .container-grid {
-    max-width: 100%;
+
+
+.textos p {
     width: 100%;
-    height: 700px;
-    padding: 0%;
 
-    background-image: url(img/fundo.png);
-    background-repeat: no-repeat;
-    background-size: 100vw 100%;
-
-    background-color: #001234;
-    text-align: center;
-
-
-}
-
-#portifolio img {
-    margin: auto;
-    width: 544px;
-
-
-    margin-top: auto;
-    margin-bottom: 50px;
-
-    border-radius: 3px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-#portifolio {
-    height: 600px;
-    margin-bottom: 100px;
-
-}
-
-#portifolio h2 {
-    height: 100px;
-
-    font-family: "Rounded sans serif 7";
-    font-size: 28px;
-
-    text-decoration: none;
+    font-family: "Roboto Light";
+    font-size: 24px;
     line-height: 1.5;
-    color: white;
+    color: black;
 
-    margin-bottom: 50px;
-    padding-top: 25px;
-    margin: auto;
+    padding: 1%;
+    text-align: left;
 
 }
+
+.textos b {
+    font-family: "Roboto Medium";
+    letter-spacing: 1px;
+}
+
+
+.textos button {
+    width: 30%;
+    background: local;
+    background-color: #3066BE;
+    padding: 1%;
+
+    font-size: 28px;
+    letter-spacing: 1px;
+
+    font-family: "Bebas";
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+    transition: background-color 500ms;
+    margin-top: 5%;
+}
+
+
+.textos button:hover {
+    width: 31%;
+    font-size: 30px;
+    background-color: #244f96;
+
+}
+
 
 
 #contato {
@@ -387,21 +380,6 @@ header {
     background-color: #616E87;
 
 }
-
-#divisoria {
-    height: 200px;
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    background-color: #001234;
-    background-image: url(img/divisoria.png);
-
-    background-size: 100vw 100%;
-
-}
-
 
 #contato h2 {
     margin-bottom: 50px;

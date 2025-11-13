@@ -233,6 +233,7 @@ header {
 }
 
 #newsletter{
+    height: 150vh;
     text-align: center;
 
     padding-bottom: 2%;
@@ -257,8 +258,8 @@ header {
 }
 
 .card {
-    height: 350px;
-    width: 250px;
+    height: 450px;
+    width: 400px;
 
     display: flex;
     flex-direction: column;
@@ -271,34 +272,46 @@ header {
     background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
 
 
-    border-radius: 4px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.348);
 
 }
 
 .card img {
-    height: 75%;
-    width: 90%;
+    height: 45%;
+    width: 100%;
 
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 1%;
+    border-radius: 10px;
 
+}
+
+.card h3 {
+    height: 50%;
+
+    font-size: 28px;
+    font-family: "Bebas";
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-top: 2%;
 }
 
 
 .card button {
-    width: 90%;
-    height: 70px;
+    width: 100%;
+    height: 80%;
 
-    background-color: var(--degrade);
+    background-color: var(--background);
 
     border: none;
     border-radius: 2px;
 
     color: white;
 
-    font-family: "Rounded sans serif 7";
-    font-size: 18px;
+    font-family: "Roboto Light";
+    font-size: 20px;
+    line-height: 1.5;
 
     cursor: pointer;
 
@@ -306,7 +319,7 @@ header {
 }
 
 .card button:hover {
-    background-color: #A63D17;
+    background-color: #3066BE;
 }
 
 #portifolio .container-grid {
@@ -362,46 +375,6 @@ header {
     padding-top: 25px;
     margin: auto;
 
-}
-
-#depoimentos .titulo {
-    text-align: left;
-    font-family: "Rounded sans serif 7";
-    font-size: 28px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-    margin-bottom: 40px;
-}
-
-#depoimentos .card-depoimentos {
-    width: 600px;
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-
-    margin-bottom: 70px;
-
-
-}
-
-.card-depoimentos p {
-    font-family: "Philosopher";
-    font-size: 16px;
-
-    padding: 20px;
-
-    background-color: #D9D9D9;
-    border-radius: 8px;
-    border: 1px solid black;
-}
-
-.card-depoimentos img {
-    margin-right: 20px;
-    height: 50px;
 }
 
 

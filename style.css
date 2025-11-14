@@ -124,7 +124,8 @@ header {
 
     flex-direction: column;
     align-items: flex-start;
-margin-top: 5%;}
+    margin-top: 5%;
+}
 
 
 .conteudo-banner p {
@@ -374,23 +375,34 @@ margin-top: 5%;}
 #contato {
     text-align: center;
 
-    padding-bottom: 50px;
-    padding-top: 0;
-
-    background-color: #616E87;
+    margin-bottom: 10%;
 
 }
 
 #contato h2 {
-    margin-bottom: 50px;
-    color: white;
+    margin-bottom: 5%;
+    color: black;
     text-align: center;
-    padding-top: 50px;
+
+
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#contato b {
+    color: #3066BE;
+    font-weight: 300;
+}
+
+#contato .form b {
+    color: black;
+    font-family: "Roboto Medium";
+
 }
 
 #contato form {
     width: 650px;
-    height: 550px;
+    height: 600px;
 
     margin: auto;
     padding: 40px 0;
@@ -401,13 +413,13 @@ margin-top: 5%;}
     align-items: center;
 
     border-radius: 10px;
-    background-color: #BAC7E2;
 
+    background: radial-gradient(circle, rgba(48, 102, 190, 0.2) 0%, rgba(48, 102, 190, 0.2) 58%, rgba(52, 170, 216, 0.2) 100%);
 
-    border: 1px solid #0F1F3C;
+    border: none;
 
     color: black;
-    font-family: "Philosopher";
+    font-family: "Roboto Light";
     font-size: 18px;
 
 }
@@ -438,14 +450,13 @@ margin-top: 5%;}
     margin-bottom: 10px;
 }
 
-.campo input {
+.campo input,
+.campo-telefone input {
     height: 40px;
 
-
-    color: #001234;
     background-color: white;
 
-    border: 1px solid #0F1F3C;
+    border: 1px solid #00000015;
     border-radius: 4px;
 
     text-indent: 10px;
@@ -458,7 +469,7 @@ margin-top: 5%;}
     color: #0F1F3C;
     background-color: white;
 
-    border: 1px solid #0F1F3C;
+    border: 1px solid #00000015;
     border-radius: 4px;
 
     outline: none;
@@ -469,20 +480,60 @@ margin-top: 5%;}
     resize: none;
 }
 
+textarea {
+    resize: none;
+}
+
+.campo-telefone{
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    width: 80%;
+
+    text-align: left;
+
+    justify-content: space-between;
+
+    gap: 15px;
+    
+}
+
+
+.ddd-wrapper {
+    flex: 1;    
+}
+
+.telefone-wrapper {
+flex: 2;
+
+}
+
+input[name="telefone"],
+input[name="ddd"] {
+    margin-top: 8px;
+    width: 100%;
+}
+
 .campo label,
-.campo-descricao label {
+.campo-descricao label,
+.campo-telefone label {
     margin-bottom: 10px;
 }
 
 .campo input,
-.campo-descricao textarea {
-    font-family: "Philosopher";
+.campo-descricao textarea,
+.campo-telefone input {
+    font-family: "Roboto Light";
     font-size: 18px;
 
 }
 
 .campo input::placeholder,
-.campo-descricao textarea::placeholder {
+.campo-descricao textarea::placeholder,
+.campo-telefone input::placeholder {
     color: #a0a0a0;
 }
 
@@ -496,18 +547,18 @@ margin-top: 5%;}
     height: 50px;
     width: 60%;
 
-    background-color: #F25922;
+    background-color: #3066BE;
     color: white;
 
-    border: 1px solid #C84A1C;
+    border: none;
     border-radius: 4px;
 
     font-size: 18px;
-    font-family: "Philosopher";
+    font-family: "Roboto Medium";
     font-weight: 800;
 
-    margin-top: 10px;
-    padding-top: 5px;
+    margin-top: 2%;
+    padding: 2%;
 
     text-transform: uppercase;
 
@@ -520,8 +571,9 @@ margin-top: 5%;}
 }
 
 #contato form button:hover {
-    background-color: #C84A1C;
+    background-color: #244f96;
 }
+
 
 footer {
     height: 290px;

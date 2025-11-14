@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -56,7 +57,7 @@
             </p>
 
             <p> Combinando <b>tecnologia</b>, <b>inteligência <br> fiscal</b> e <b>experiência contábil.</b><br></p>
-              <p>  Somos seu parceiro estratégico na <br> jornada pela <b>eficiência fiscal</b>.</p>
+            <p> Somos seu parceiro estratégico na <br> jornada pela <b>eficiência fiscal</b>.</p>
 
             <button href="#quemSomos">ler mais</button>
         </div>
@@ -100,39 +101,55 @@
         </div>
         <div class="textos">
 
-            <p> O <b>Cenário Tributário</b> está em constante transformação — novas legislações, 
-                oportunidades de economia fiscal e tendências em automação estão moldando o 
-                <b>futuro da gestão tributária</b></p>
+            <p> O <b>Cenário Tributário</b> está em constante transformação — novas legislações,
+                oportunidades de economia fiscal e tendências em automação estão moldando o
+                <b>futuro da gestão tributária</b>
+            </p>
 
-            <p> <b>Assine nossa Newsletter</b> e receba <b>Insights Estratégicos</b>, atualizações sobre normas 
-                fiscais, e <b>Conteúdos Exclusivos</b> que ajudam sua empresa a se manter em conformidade 
+            <p> <b>Assine nossa Newsletter</b> e receba <b>Insights Estratégicos</b>, atualizações sobre normas
+                fiscais, e <b>Conteúdos Exclusivos</b> que ajudam sua empresa a se manter em conformidade
                 e à frente do mercado. </p>
 
-            <p> <b>Transforme Informação em Vantagem Competitiva</b> com quem entende de <b>Tecnologia</b> e 
-                <b>Inteligência Tributária</b></p>
+            <p> <b>Transforme Informação em Vantagem Competitiva</b> com quem entende de <b>Tecnologia</b> e
+                <b>Inteligência Tributária</b>
+            </p>
 
-                <button href="#newsletter">Assine nossa Newsletter</button>
+            <button href="#newsletter">Assine nossa Newsletter</button>
         </div>
     </section>
 
     <section id="contato">
-        <h2>Contate-nos</h2>
+        <h2><b>entre em contato</b> e simplifique sua Gestão Tributária</h2>
+        <div class="form">
+            <form onsubmit="solicitarOrcamento(event)">
+                <div class="campo">
+                    <label for="campo-nome"><b>Nome Completo</b></label>
+                    <input id="campo-nome" placeholder="Name" type="text">
+                </div>
+                <div class="campo">
+                    <label for="campo-email"><b>Email ou telefone para contato</b></label>
+                    <input id="campo-email" placeholder="example@gmail.com" type="email">
+                </div>
 
-        <form onsubmit="solicitarOrcamento(event)">
-            <div class="campo">
-                <label for="campo-nome"><b>Nome Completo</b></label>
-                <input id="campo-nome" placeholder="Name" type="text">
-            </div>
-            <div class="campo">
-                <label for="campo-email"><b>Email ou telefone para contato</b></label>
-                <input id="campo-email" placeholder="example@gmail.com" type="email">
-            </div>
-            <div class="campo-descricao">
-                <label for="campo-texto"><b>Assunto</b></label>
-                <textarea placeholder="Reason for contact" id="campo-texto" cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
+                <div class="campo-telefone">
+                    <div class="ddd-wrapper">
+                        <label for="ddd"><b>DDD</b></label>
+                        <input type="text" id="ddd" name="ddd" placeholder="DDD" maxlength="2" required>
+                    </div>
+                    <div class="telefone-wrapper">
+                        <label for="telefone"><b>Telefone</b></label>
+                        <input type="text" id="telefone" name="telefone" placeholder="90000-0000" maxlength="9"
+                            required>
+                    </div>
+                </div>
+
+                <div class="campo-descricao">
+                    <label for="campo-texto"><b>Assunto</b></label>
+                    <textarea placeholder="Reason for contact" id="campo-texto" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
 
     <footer>
@@ -182,7 +199,6 @@
 
         </div>
     </footer>
-
 
 
 

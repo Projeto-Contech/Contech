@@ -183,7 +183,7 @@ header {
     justify-content: space-between;
 }
 
-.texto-button button {
+#sobre button {
     width: 40%;
     background: local;
     background-color: #3066BE;
@@ -233,6 +233,10 @@ header {
     margin-right: 5%;
 }
 
+#sobre .p2 {
+    display: none;
+}
+
 #newsletter {
     height: 130vh;
     text-align: center;
@@ -278,7 +282,7 @@ header {
 }
 
 .card img {
-    height: 45%;
+    height: 95%;
     width: 100%;
 
     margin-bottom: 1%;
@@ -486,7 +490,7 @@ textarea {
     resize: none;
 }
 
-.campo-telefone{
+.campo-telefone {
     display: flex;
 
     align-items: center;
@@ -500,16 +504,16 @@ textarea {
     justify-content: space-between;
 
     gap: 15px;
-    
+
 }
 
 
 .ddd-wrapper {
-    flex: 1;    
+    flex: 1;
 }
 
 .telefone-wrapper {
-flex: 2;
+    flex: 2;
 
 }
 
@@ -578,7 +582,7 @@ input[name="ddd"] {
 footer {
     height: 290px;
 
-    background-color: #001234;
+    background-color: #3066BE;
 }
 
 footer .container-grid {
@@ -653,11 +657,16 @@ footer .container-grid {
 }
 
 
-
+@media screen and (max-width: 1530px) {
+    .card {
+        width: 300px;
+    }
+}
 
 @media screen and (max-width: 1300px) {
     header {
         position: relative;
+        width: 100%
     }
 
     header button {
@@ -669,17 +678,19 @@ footer .container-grid {
         border: none;
     }
 
+    header img {
+        width: 25%;
+    }
+
     header svg {
         fill: var(--azul-contech);
     }
 
-
-
     nav.menu {
         height: 300px;
-        width: 250px;
+        width: 30%;
 
-        padding: 0px 30px;
+        padding: 5%;
 
 
         flex-direction: column;
@@ -694,23 +705,94 @@ footer .container-grid {
     }
 
     #sobre {
-        padding: 100px 15%;
+        padding: 15%;
 
+        margin-top: 10%;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-button {
+        display: none;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    #sobre p {
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        font-size: 22px;
+        line-height: 1.5;
+        justify-self: center;
+
+        margin-bottom: 1%;
+    }
+
+    #sobre .p2 {
+        display: unset;
+    }
+
+    #sobre button {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        font-size: 24px;
+        margin-top: 4%;
+        padding: 1%
+    }
+
+    #sobre .p2 img {
+
+        width: 100%;
+        margin-bottom: 5%;
+        display: unset;
+        align-items: center;
     }
 
     .card {
-        height: 320px;
-        width: 200px;
+        height: 420px;
+        width: 300px;
+    }
+
+    .card button {
+        padding: 2%;
+    }
+
+    #contato {
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        margin-bottom: 0;
+        background: radial-gradient(circle, rgba(48, 102, 190, 0.2) 0%, rgba(48, 102, 190, 0.2) 58%, rgba(52, 170, 216, 0.2) 100%);
+    }
+
+    #contato h2 {
+        font-size: 36px;
     }
 
     #contato form {
-        width: 75%;
+        width: 100%;
+        background: none;
+        box-shadow: none;
+
     }
 }
 
 
 @media screen and (max-width: 1080px) {
 
+
+    .conteudo-banner p {
+        font-size: 40px;
+        width: 85%
+    }
 
     #sobre {
         padding: 80px 15%;
@@ -730,6 +812,7 @@ footer .container-grid {
     }
 
 
+
     .card {
         height: 400px;
 
@@ -739,8 +822,21 @@ footer .container-grid {
         flex-basis: 40%;
     }
 
+    .card button {
+        font-size: 16px
+    }
+
+    .card h3 {
+        font-size: 20px;
+        height: 20%
+    }
+
     .card img {
         margin: auto;
+    }
+
+    .textos button {
+        width: 60%;
     }
 
     footer {
@@ -767,24 +863,34 @@ footer .container-grid {
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1148px) {
+
+
+    .container-cards {
+        flex-wrap: nowrap;
+
+        gap: 2%;
+
+        overflow-x: auto;
+    }
+
+
+    #newsletter .container-grid {
+        width: 100%;
+        margin: unset;
+    }
+
+    .card {
+        flex-basis: 45%;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
 
     h2 {
         font-size: 24px;
     }
-
-
-
-    .conteudo-banner p {
-        font-size: 24px;
-    }
-
-    .conteudo-banner img {
-        height: 145px;
-        width: 100px;
-
-    }
-
 
     #sobre {
         margin-top: 30px;
@@ -799,48 +905,52 @@ footer .container-grid {
         margin-bottom: 10px;
     }
 
-    .card {
-        flex-basis: 45%;
+
+
+    .container-cards {
+        flex-wrap: nowrap;
+
+        gap: 40px;
+
+        overflow-x: auto;
     }
 
-    #solucoes h2 {
-        padding-left: 20px;
+    .card {
+        height: 500x;
+        width: 400px;
+
+        flex-basis: unset;
+    }
+
+
+    .card button,
+    .card h3 {
+        padding: 2%
+    }
+
+    .card button {
+        font-size: 18px;
+    }
+
+
+    #newsletter h2 {
+
+        font-size: 36px;
 
         margin-top: 30px;
         margin-bottom: 50px;
     }
 
-    #depoimentos p {
-        width: 75%
+    #newsletter p {
+        font-size: 20px;
+
     }
 
-    #depoimentos {
-        height: unset;
+    .textos button {
+        width: 60%;
+        font-size: 24px;
     }
 
-    #depoimentos .titulo img {
-        width: 138px;
-        height: 25px;
-    }
-
-
-    #depoimentos .card-depoimentos {
-        margin-bottom: 50px;
-        width: unset;
-    }
-
-    .card-depoimentos p {
-        padding: 10px;
-    }
-
-    .card-depoimentos img {
-        margin-right: 10px;
-    }
-
-    #divisoria {
-        height: 150px;
-        background-image: none;
-    }
 
 }
 
@@ -853,18 +963,11 @@ footer .container-grid {
     }
 
     .conteudo-banner p {
-
-        padding-bottom: 30px;
         height: unset;
-        font-size: 20px;
+        font-size: 36px;
     }
 
-    .conteudo-banner img {
-        height: 125px;
-        width: 80px;
-        margin-bottom: 30px;
 
-    }
 
     #sobre {
         padding-top: 10px;
@@ -873,30 +976,46 @@ footer .container-grid {
     }
 
 
+    .container-cards {
+        flex-wrap: nowrap;
+
+        gap: 20px;
+
+        overflow-x: auto;
+    }
+
+    .card {
+        height: 400px;
+        width: 400px;
+
+        flex-basis: unset;
+    }
+
+    .card:first-child {
+        margin-left: 30px;
+    }
+
+    .card:last-child {
+        margin-right: 30px;
+    }
+
+    .textos p {
+        justify-content: space-between;
+        padding-top: 5%;
+        margin-bottom: 2px;
+    }
 
 
-
-    #solucoes,
     #contato {
         margin-bottom: unset;
     }
 
-    #portifolio {
-        height: unset;
-        font-size: 24px;
-        margin-bottom: unset;
-    }
-
-    #portifolio img {
-        width: 75%;
-    }
-
     .campo,
-    .campo-descricao,
-    #contato form button {
-        width: 75%;
-    }
+    .campo-descricao {
+    width: 100%;
 }
+}
+
 
 @media screen and (max-width: 560px) {
     h2 {
@@ -904,7 +1023,7 @@ footer .container-grid {
     }
 
     .conteudo-banner p {
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .conteudo-banner img {
@@ -918,7 +1037,8 @@ footer .container-grid {
     }
 
     header img {
-        width: 200px;
+        width: 40%;
+
     }
 
     .banner {
@@ -940,13 +1060,18 @@ footer .container-grid {
 
     }
 
+    #sobre img {
+        width: 60%;
+        margin: auto;
+    }
+
     #sobre p {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 20px;
     }
 
-    #solucoes.container-grid {
+    #newsletter .container-grid {
         width: 100%;
         margin: unset;
     }
@@ -974,24 +1099,6 @@ footer .container-grid {
         margin-right: 30px;
     }
 
-    #portifolio h2 {
-        margin-bottom: 0px;
-        font-size: 22px;
-    }
-
-
-    #portifolio .container-grid {
-        padding-bottom: 60px;
-        height: unset;
-    }
-
-
-    #contato {
-        background-color: #BAC7E2;
-        height: unset;
-        padding: 0;
-        padding-top: 0;
-    }
 
     #contato h2 {
         color: black;
@@ -1006,7 +1113,8 @@ footer .container-grid {
 
     #contato form button {
         width: 55%;
-        height: 40px;
+        font-size: 22px;
+        padding: 1%;
     }
 
 }
@@ -1022,16 +1130,5 @@ footer .container-grid {
 
     .conteudo-banner p {
         font-size: 16px;
-    }
-
-    #depoimentos .titulo img {
-        width: 100px;
-        height: 18px;
-    }
-
-    #depoimentos .container-grid {
-        padding-top: unset;
-        height: unset;
-
     }
 }

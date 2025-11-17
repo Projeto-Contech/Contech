@@ -1,0 +1,752 @@
+@font-face {
+    font-family: "Bebas";
+    src: url(fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(fonts/Roboto-Light.ttf)
+}
+
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url(fonts/Roboto-Medium.ttf)
+}
+
+/*reset css*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-contech: #3066BE;
+    --background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+h2 {
+    font-family: "Bebas";
+    font-size: 28px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+header button {
+    display: none;
+    color: var(--azul-contech);
+}
+
+header {
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header img {
+    width: 15%;
+    display: flex;
+    margin-right: 15%;
+
+}
+
+.menu a {
+    font-family: "Roboto Light";
+    font-size: 18px;
+
+    text-decoration: none;
+    color: black;
+    transition: 500ms ease;
+    text-decoration: underline transparent;
+    transition: text-decoration 500ms ease;
+
+
+}
+
+.menu a:hover {
+    color: #B9B541;
+    font-family: "Roboto Medium";
+}
+
+header {
+    color: white;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: left;
+    /* Centraliza o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.banner {
+
+    width: 100%;
+    background: radial-gradient(circle, rgba(48, 102, 190, 0.300) 0%, rgba(48, 102, 190, 0.300) 58%, rgba(52, 170, 216, 0.300) 100%);
+    background-repeat: no-repeat;
+}
+
+.conteudo-banner {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+
+
+.conteudo-banner p {
+    width: 800px;
+    color: black;
+
+    font-family: "Bebas";
+    font-size: 60px;
+
+    text-align: left;
+    line-height: 1.8;
+
+    letter-spacing: 2px;
+}
+
+.conteudo-banner b {
+    width: 530px;
+    background: local;
+    background-color: #3066BE;
+
+    border-radius: 10px;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: white;
+    font-weight: 300;
+}
+
+.conteudo-banner span {
+    color: #3066BE;
+}
+
+#sobre p {
+    font-size: 24px;
+    font-family: "Roboto Light";
+    color: black;
+
+    text-align: left;
+    line-height: 1.9;
+
+    margin-bottom: 2%;
+}
+
+#sobre b {
+    color: #3066BE;
+    font-family: "Roboto Medium";
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.texto-button {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sobre button {
+    width: 40%;
+    background: local;
+    background-color: #3066BE;
+    padding: 2%;
+
+
+    font-size: 28px;
+    letter-spacing: 1px;
+
+    font-family: "Bebas";
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+
+    transition: background-color 500ms;
+
+
+    margin-top: 8%;
+    align-items: baseline;
+}
+
+#sobre button:hover {
+    width: 42%;
+    font-size: 30px;
+    background-color: #244f96;
+
+}
+
+#sobre {
+    width: 100%;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5%;
+
+    height: 400px;
+
+    margin-bottom: 10%;
+}
+
+#sobre img {
+    width: 30%;
+    margin-right: 5%;
+}
+
+#sobre .p2 {
+    display: none;
+}
+
+#newsletter {
+    height: 130vh;
+    text-align: center;
+
+    margin-bottom: 10%;
+
+}
+
+#newsletter h2 {
+    margin-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: 2%;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 290px;
+
+    background-color: #3066BE;
+}
+
+footer .container-grid {
+    height: 100%;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.redes-sociais a {
+    height: 50%;
+    margin: auto;
+
+    margin-left: 8px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    color: white;
+    font-family: "Philosopher";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.numero {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.email {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.redes-sociais svg {
+    height: 22px;
+    color: white;
+}
+
+
+.redes-sociais svg:hover {
+    color: var(--laranja-helpgame);
+}
+
+
+.menu-fechado {
+    display: none;
+}
+
+
+#icone-barras {
+    display: none;
+}
+
+
+
+/* --- INOVAÇÃO E INTELIGÊNCIA SECTION --- */
+.inovacao-inteligencia {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.inovacao-inteligencia h2 {
+    margin-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: 2%;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+
+.inovacao-inteligencia h2 b {
+    color: #3066BE;
+    font-family: "Bebas";
+    font-weight: 300;
+}
+
+.inovacao-inteligencia b {
+    color: #ffffff;
+    font-family: "Roboto Medium";
+    font-weight: 300;
+}
+
+.info-box-wrapper {
+    display: flex;
+    flex-direction: column; /* Caixas empilhadas verticalmente */
+    align-items: center;
+}
+
+.info-box {
+    width: 100%;
+
+    margin: 2%;
+
+    padding: 2%;
+    text-align: left;
+    border-radius: 10px;
+
+    background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 0.900) 58%, rgba(52, 170, 216, 1) 100%);
+  
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.348);
+
+}
+
+.blue-bg {
+    border-radius: 2px;
+
+    color: white;
+
+    font-family: "Roboto Light";
+    font-size: 20px;
+    line-height: 1.5;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blue-bg strong {
+    font-weight: 700;
+}
+
+
+/* --- VIDEO SECTION --- */
+#video-section {
+    display: flex;
+    justify-content: center;
+  
+    margin-bottom: 10%;
+}
+
+
+#video {
+
+    border-radius: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+}
+
+.play-button {
+
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+
+}
+
+
+/* --- FOOTER --- */
+.footer {
+    background-color: var(--color-dark-blue);
+    color: var(--color-text-light);
+    padding: 40px 50px;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 40px;
+    filter: brightness(0) invert(1); /* Tenta deixar o logo branco */
+}
+
+.footer-links p, .footer-contact p {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.footer-links p:first-child {
+    margin-top: 5px; /* Alinhamento visual */
+}
+
+.footer-links strong, .footer-contact strong {
+    font-weight: 700;
+}
+
+.footer-links {
+    margin-left: 100px; /* Espaçamento entre as seções */
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+}
+
+/* Adicione ícones se quiser (usando font-awesome ou emojis) */
+/* Exemplo de como adicionar um ícone ou emoji */
+/* .footer-contact p:before {
+    content: '📧';
+    margin-right: 10px;
+    font-size: 1.2em;
+} */
+
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+        width: 100%
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header img {
+        width: 25%;
+    }
+
+    header svg {
+        fill: var(--azul-contech);
+    }
+
+    nav.menu {
+        height: 300px;
+        width: 30%;
+
+        padding: 5%;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #3066be5b;
+
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+    }
+
+    #sobre {
+        padding: 15%;
+
+        margin-top: 10%;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-button {
+        display: none;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    #sobre p {
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        font-size: 22px;
+        line-height: 1.5;
+        justify-self: center;
+
+        margin-bottom: 1%;
+    }
+
+    #sobre .p2 {
+        display: unset;
+    }
+
+    #sobre button {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        font-size: 24px;
+        margin-top: 4%;
+        padding: 1%
+    }
+
+    #sobre .p2 img {
+
+        width: 100%;
+        margin-bottom: 5%;
+        display: unset;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1080px) {
+
+
+    .conteudo-banner p {
+        font-size: 40px;
+        width: 85%
+    }
+
+    #sobre {
+        padding: 80px 15%;
+
+    }
+
+    .inovacao-inteligencia h2 {
+        font-size: 40px;
+    }
+
+    #sobre h2 {
+        margin-top: 40px;
+    }
+
+    #sobre p {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    footer .container-grid {
+        padding: 80px;
+        flex-direction: column;
+    }
+
+    footer img {
+        margin-bottom: 100px;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .inovacao-inteligencia h2 {
+        font-size: 30px;
+    }
+
+    #sobre {
+        margin-top: 30px;
+
+        padding-top: 20px;
+        height: unset;
+
+        padding-bottom: unset;
+    }
+
+    #sobre p {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .conteudo-banner p {
+        height: unset;
+        font-size: 36px;
+    }
+
+
+
+    #sobre {
+        padding-top: 10px;
+        height: unset;
+
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .conteudo-banner p {
+        font-size: 30px;
+    }
+
+    .conteudo-banner img {
+        height: 125px;
+        width: 90px;
+
+    }
+
+    .container-grid {
+        width: 90%;
+    }
+
+    header img {
+        width: 40%;
+
+    }
+
+    .banner {
+        background-size: cover;
+    }
+
+
+    nav.menu {
+        width: 100%;
+    }
+
+    #sobre {
+        padding-right: 0px;
+        padding-left: 0px;
+
+        padding-top: 10px;
+        margin-bottom: 30px;
+
+
+    }
+
+    #sobre img {
+        width: 60%;
+        margin: auto;
+    }
+
+    #sobre p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 16px;
+    }
+}

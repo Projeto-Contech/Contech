@@ -414,12 +414,28 @@ footer .container-grid {
     justify-content: center;
   
     margin-bottom: 10%;
+    flex-direction: column;
 }
 
+.block-title {
+    font-size: 2em;
+    font-weight: 300;
+    color: var(--color-text-dark);
+    text-align: center;
+
+    background: radial-gradient(circle, rgba(48, 102, 190, 1) 0%, rgba(48, 102, 190, 1) 58%, rgba(52, 170, 216, 1) 100%);
+    color: white;
+    font-family: "Bebas";
+    letter-spacing: 1px;
+
+    padding: 2%;
+    padding-top: 1%;
+    border-radius: 10px 10px 0px 0px;
+}
 
 #video {
 
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     display: flex;
 
     justify-content: center;

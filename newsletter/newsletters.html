@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contech</title>
+    <title>Newsletter</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newsletter.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-    <script src="script.js" defer></script>
-
+    <script src="newsletter.js" defer></script>
 </head>
-
 <body>
-    <div class="filtro"></div>
 
     <header>
         <div class="container-grid">
@@ -23,8 +18,8 @@
             <nav id="menu" class="menu">
                 <a href="/index.html">Home</a>
                 <a href="/quemSomos/quemsomos.html">Quem Somos</a>
-                <a href="newsletter/newsletters.html">Newsletter</a>
-                <a href="#contato">Contate-nos</a>
+                <a href="#newsletter">Newsletter</a>
+                <a href="../index.html#contato">Contate-nos</a>
             </nav>
             <button onclick="abreFechaMenu()">
                 <svg id="icone-barras" xmlns="http://www.w3.org/2000/svg"
@@ -43,126 +38,51 @@
 
     <div class="banner">
         <div class="container-grid conteudo-banner">
-            <p> <b>Tecnologia e estratégia</b> </p>
-            <p>a favor da sua <span>eficiência tributária</span></p>
+            <p> <b>Newsletter</b> </p>
         </div>
     </div>
 
-    <section class="container-grid" id="sobre">
-        <img src="/img/grupo.png" alt="">
-        <div class="texto-button">
-            <p> A Con<b>tech</b> nasceu com o propósito de, <br>
-                <b>Transformar</b> a forma como as empresas <br>
-                lidam com a <b> gestão tributária</b>. <br>
-            </p>
 
-            <p> Combinando <b>tecnologia</b>, <b>inteligência <br> fiscal</b> e <b>experiência contábil.</b><br></p>
-            <p> Somos seu parceiro estratégico na <br> jornada pela <b>eficiência fiscal</b>.</p>
-
-            <button href="#quemSomos">ler mais</button>
-        </div>
-        <div class="p2">
-            <img src="/img/Group 178.png" alt="">
-            <p> A Con<b>tech</b> nasceu com o propósito de, 
-                <b>Transformar</b> a forma como as empresas 
-                lidam com a <b> gestão tributária</b>. 
-            </p>
-
-            <p> Combinando <b>tecnologia</b>, <b>inteligência fiscal</b> e <b>experiência contábil.</b></p>
-            <p> Somos seu parceiro estratégico na jornada pela <b>eficiência fiscal</b>.</p>
-
-            <button href="#quemSomos">ler mais</button>
-        </div>
 
     </section>
 
-    <section class="container-grid" id="newsletter">
-        <h2>Fique por dentro do <b>universo tributário</b></h2>
-        <div class="container-cards">
+    <main id="textos-new" class="container-grid">
 
-            <div class="card">
-                <img src="img/card1.png" alt="">
-                <h3>Atualizações Constantes</h3>
-                <button>O sistema tributário brasileiro <br>
-                    passa por centenas de <br>
-                    alterações anuais, exigindo <br>
-                    acompanhamento constante <br>
-                    para garantir conformidade e <br>
-                    evitar autuações.</button>
-            </div>
-            <div class="card">
-                <img src="img/card2.png" alt="">
-                <h3>tecnologia na contabilidade</h3>
-                <button>A automação e o uso <br>
-                    de inteligência artificial estão <br>
-                    revolucionando a rotina <br>
-                    contábil, reduzindo erros e <br>
-                    otimizando a gestão fiscal das <br>
-                    empresas.</button>
-            </div>
-            <div class="card">
-                <img src="img/card3.png" alt="">
-                <h3>compliance tributário</h3>
-                <button>O Empresas com processos <br>
-                    tributários bem <br>
-                    estruturados podem reduzir <br>
-                    custos operacionais e aproveitar <br>
-                    melhor benefícios fiscais e <br>
-                    incentivos legais.</button>
-            </div>
+        <section class="content-block ">
+            <h2 class="block-title">ATUALIZAÇÕES CONSTANTES</h2>
+            <img src="atualizacoes_constantes.jpg" alt="Gráfico e dashboard em notebook" class="content-image">
+            <p>O sistema tributário brasileiro é marcado por sua complexidade e <b>constante mutabilidade</b>, exigindo das empresas um esforço contínuo para cumprir as legislações federais,
+             estaduais e municipais, o que exige atenção redobrada das equipes e profissionais da área fiscal.</p>
+            <p>Esse acompanhamento é essencial para garantir o cumprimento correto das obrigações tributárias e <br>
+            <b>evitar autuações ou penalidades decorrentes</b> de erros ou descumprimentos.</p>
+            <p>A Con<b>tech</b> oferece soluções que garantem a gestão legal e documental para assegurar a conformidade e a segurança jurídica das operações empresariais.</p>
+        </section>
+
+        <section class="content-block">
+            <h2 class="block-title">TECNOLOGIA NA CONTABILIDADE</h2>
+            <img src="tecnologia_contabilidade.jpg" alt="Sistema NASHQA" class="content-image">
+            <p>A tecnologia tem desempenhado um papel fundamental na <b>modernização da contabilidade</b>, transformando processos antes manuais em atividades automatizadas, eficientes e precisas.</p>
+            <p>Ferramentas digitais, como de <b>gestão contábil e sistemas de automação fiscal</b>, proporcionam maior agilidade na coleta, análise e declaração de dados, permitindo que a <b>equipe fiscal</b> dedique mais tempo a análises estratégicas e à tomada de decisões.</p>
+            <p>Além disso, a integração entre sistemas contábeis e órgãos governamentais — como a Receita Federal e as Secretarias de Fazenda — simplifica o cumprimento de exigências acessórias e o envio de informações em tempo real, garantindo maior <b>conformidade com a legislação vigente</b>.</p>
+            <p>Dessa forma, a tecnologia não apenas otimiza o registro e a contabilização das operações contábeis, mas também fortalece o <b>papel estratégico da contabilidade</b> nas organizações, fornecendo análises mais precisas e subsídios de decisão baseados em dados.</p>
+        </section>
+
+        <section class="content-block">
+            <h2 class="block-title">COMPLIANCE TRIBUTÁRIO</h2>
+            <img src="compliance_tributario.jpg" alt="Balança de justiça com pilhas de moedas e documentos fiscais" class="content-image">
+            <p>O <b>Compliance Tributário</b> consiste no conjunto de práticas, políticas e controles adotados pelas organizações para assegurar o cumprimento integral das obrigações fiscais e <b>reduzir riscos</b>.</p>
+            <p>Seu principal objetivo é garantir que todos os tributos sejam apurados, declarados e recolhidos de forma correta, dentro dos prazos estabelecidos pelos órgãos competentes.</p>
+            <p>Essa abordagem envolve não apenas o <b>acompanhamento constante das mudanças</b> na legislação, mas também a implementação de controles internos e auditorias de rotina que identificam e corrigem possíveis falhas antes que se tornem problemas fiscais.</p>
+            <p>O uso de tecnologias de automação e monitoramento** também é fundamental, pois minimiza a intervenção manual, reduzindo a chance de erros que, de outra forma, poderiam resultar em autuações ou penalidades.</p>
+            <p>Em síntese, o <b>Compliance Tributário**</b> é um instrumento essencial para a boa governança corporativa, pois além de evitar passivos e multas relacionadas às questões fiscais, fortalece a <b>reputação e a credibilidade</b> da empresa perante o mercado e as autoridades fiscais.</p>
+        </section>
+
+        <div class="call-to-action">
+            <button class="cta-button">FALE CONOSCO</button>
         </div>
-        <div class="textos">
 
-            <p> O <b>Cenário Tributário</b> está em constante transformação — novas legislações,
-                oportunidades de economia fiscal e tendências em automação estão moldando o
-                <b>futuro da gestão tributária</b>
-            </p>
+    </main>
 
-            <p> <b>Assine nossa Newsletter</b> e receba <b>Insights Estratégicos</b>, atualizações sobre normas
-                fiscais, e <b>Conteúdos Exclusivos</b> que ajudam sua empresa a se manter em conformidade
-                e à frente do mercado. </p>
-
-            <p> <b>Transforme Informação em Vantagem Competitiva</b> com quem entende de <b>Tecnologia</b> e
-                <b>Inteligência Tributária</b>
-            </p>
-
-            <button href="#newsletter">Assine nossa Newsletter</button>
-        </div>
-    </section>
-
-    <section class="container-grid" id="contato" >
-        <h2><b>entre em contato</b> e simplifique sua Gestão Tributária</h2>
-        <div class="form">
-            <form onsubmit="solicitarOrcamento(event)">
-                <div class="campo">
-                    <label for="campo-nome"><b>Nome Completo</b></label>
-                    <input id="campo-nome" placeholder="Nome" type="text">
-                </div>
-                <div class="campo">
-                    <label for="campo-email"><b>Email</b></label>
-                    <input id="campo-email" placeholder="exemplo@gmail.com" type="email">
-                </div>
-
-                <div class="campo-telefone">
-                    <div class="ddd-wrapper">
-                        <label for="ddd"><b>DDD</b></label>
-                        <input type="text" id="ddd" name="ddd" placeholder="DDD" maxlength="2" required>
-                    </div>
-                    <div class="telefone-wrapper">
-                        <label for="telefone"><b>Telefone</b></label>
-                        <input type="text" id="telefone" name="telefone" placeholder="90000-0000" maxlength="9"
-                            required>
-                    </div>
-                </div>
-
-                <div class="campo-descricao">
-                    <label for="campo-texto"><b>Assunto</b></label>
-                    <textarea placeholder="Digite o Assunto" id="campo-texto" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
 
     <footer>
         <div class="container-grid">
@@ -214,6 +134,6 @@
 
 
 
+    
 </body>
-
 </html>

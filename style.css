@@ -94,9 +94,11 @@ header img {
 
 }
 
+.menu b,
 .menu a:hover {
     color: #B9B541;
     font-family: "Roboto Medium";
+    font-weight: 300;
 }
 
 header {
@@ -581,6 +583,7 @@ input[name="ddd"] {
 }
 
 
+
 footer {
     height: 290px;
 
@@ -611,7 +614,7 @@ footer .container-grid {
     text-align: left;
 
     color: white;
-    font-family: "Philosopher";
+    font-family: "Roboto Light";
     font-size: 18px;
     text-decoration: none;
 }
@@ -645,9 +648,8 @@ footer .container-grid {
 
 
 .redes-sociais svg:hover {
-    color: var(--laranja-helpgame);
+    color: #E7E247;
 }
-
 
 .menu-fechado {
     display: none;

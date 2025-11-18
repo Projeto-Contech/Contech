@@ -94,9 +94,11 @@ header img {
 
 }
 
+.menu b,
 .menu a:hover {
     color: #B9B541;
     font-family: "Roboto Medium";
+    font-weight: 300;
 }
 
 header {
@@ -222,7 +224,7 @@ header {
     padding: 20px 0 40px 0;
     color: white;
 
-    font-family: "Bebas";
+ 
 }
 
 .cta-button {
@@ -230,24 +232,21 @@ header {
     color: var(--color-text-light);
     border: none;
     padding: 15px 40px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; 
+    font-family: "Bebas";
+
+    letter-spacing: 1px;
 }
 
 .cta-button:hover {
     background-color: #215486;
     /* Tom um pouco mais escuro no hover */
 }
-
-
-
-
-
-
 
 
 
@@ -294,7 +293,7 @@ footer .container-grid {
     text-align: left;
 
     color: white;
-    font-family: "Philosopher";
+    font-family: "Roboto Light";
     font-size: 18px;
     text-decoration: none;
 }
@@ -328,8 +327,13 @@ footer .container-grid {
 
 
 .redes-sociais svg:hover {
-    color: var(--laranja-helpgame);
+    color: #E7E247;
 }
+
+
+
+
+
 
 
 .menu-fechado {
@@ -339,4 +343,249 @@ footer .container-grid {
 
 #icone-barras {
     display: none;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+        width: 100%
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header img {
+        width: 25%;
+    }
+
+    header svg {
+        fill: var(--azul-contech);
+    }
+
+    nav.menu {
+        height: 300px;
+        width: 30%;
+
+        padding: 5%;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #3066be5b;
+
+        position: absolute;
+        top: 100px;
+        right: 0px;
+
+    }
+
+    #sobre {
+        padding: 15%;
+
+        margin-top: 10%;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-button {
+        display: none;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    #sobre p {
+        width: 100%;
+        text-align: left;
+        align-items: center;
+        font-size: 22px;
+        line-height: 1.5;
+        justify-self: center;
+
+        margin-bottom: 1%;
+    }
+
+    #sobre .p2 {
+        display: unset;
+    }
+
+    #sobre button {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        font-size: 24px;
+        margin-top: 4%;
+        padding: 1%
+    }
+
+    #sobre .p2 img {
+
+        width: 100%;
+        margin-bottom: 5%;
+        display: unset;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1080px) {
+
+
+    .conteudo-banner p {
+        font-size: 40px;
+        width: 85%
+    }
+
+    #sobre {
+        padding: 80px 15%;
+
+    }
+
+    .inovacao-inteligencia h2 {
+        font-size: 40px;
+    }
+
+    #sobre h2 {
+        margin-top: 40px;
+    }
+
+    #sobre p {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    footer .container-grid {
+        padding: 80px;
+        flex-direction: column;
+    }
+
+    footer img {
+        margin-bottom: 100px;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .inovacao-inteligencia h2 {
+        font-size: 30px;
+    }
+
+    #sobre {
+        margin-top: 30px;
+
+        padding-top: 20px;
+        height: unset;
+
+        padding-bottom: unset;
+    }
+
+    #sobre p {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .conteudo-banner p {
+        height: unset;
+        font-size: 36px;
+    }
+
+
+
+    #sobre {
+        padding-top: 10px;
+        height: unset;
+
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .conteudo-banner p {
+        font-size: 30px;
+    }
+
+    .conteudo-banner img {
+        height: 125px;
+        width: 90px;
+
+    }
+
+    .container-grid {
+        width: 90%;
+    }
+
+    header img {
+        width: 40%;
+
+    }
+
+    .banner {
+        background-size: cover;
+    }
+
+
+    nav.menu {
+        width: 100%;
+    }
+
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 16px;
+    }
+}
 }

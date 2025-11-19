@@ -729,18 +729,20 @@ footer .container-grid {
     }
 
     #sobre {
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: 4%;
+        padding-left: 4%;
 
         padding-top: 10px;
-        margin-bottom: 30px;
-
-
+        margin-bottom: 15%;
     }
 
     #sobre img {
         width: 60%;
         margin: auto;
+    }
+
+    #sobre button {
+        width: 70%;
     }
 
     #sobre p {
@@ -749,6 +751,12 @@ footer .container-grid {
         margin-bottom: 20px;
     }
 
+    .block-title{
+        width: 90%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 400px) {

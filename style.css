@@ -30,6 +30,13 @@ body {
     background-color: #f2f2f2;
 }
 
+.libras{
+left: 0px;
+right: initial;
+display: ;
+}
+
+
 h2 {
     font-family: "Bebas";
     font-size: 28px;
@@ -399,8 +406,8 @@ width: 100%;
     color: black;
     text-align: center;
 
+    font-size: 1.8em;
 
-    font-size: 60px;
     font-weight: 300;
 }
 
@@ -788,9 +795,6 @@ footer .container-grid {
         background: radial-gradient(circle, rgba(48, 102, 190, 0.2) 0%, rgba(48, 102, 190, 0.2) 58%, rgba(52, 170, 216, 0.2) 100%);
     }
 
-    #contato h2 {
-        font-size: 36px;
-    }
 
     #contato form {
         width: 100%;
@@ -904,7 +908,7 @@ footer .container-grid {
 @media screen and (max-width: 890px) {
 
     h2 {
-        font-size: 24px;
+        font-size: 1.8em;
     }
 
     #sobre {
@@ -974,7 +978,7 @@ footer .container-grid {
 
 
     h2 {
-        font-size: 24px;
+        font-size: 1.8em;
     }
 
     .conteudo-banner p {
@@ -1027,7 +1031,10 @@ footer .container-grid {
 
     .campo,
     .campo-descricao {
-        width: 100%;
+        width: 90%;
+    }
+    .campo-telefone{
+        width: 90%;
     }
 }
 
@@ -1117,7 +1124,8 @@ footer .container-grid {
 
     #contato h2 {
         color: black;
-        margin-bottom: unset
+        margin-bottom: unset;
+        font-size: 1.8em;
     }
 
     #contato form {
@@ -1132,9 +1140,11 @@ footer .container-grid {
         padding: 1%;
     }
 
+  
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 427px) {
     header img {
         width: 160px;
     }
@@ -1145,5 +1155,10 @@ footer .container-grid {
 
     .conteudo-banner p {
         font-size: 16px;
+    }
+
+    #newsletter button {
+        font-size: 1.2em;
+        margin-bottom: 2%;
     }
 }

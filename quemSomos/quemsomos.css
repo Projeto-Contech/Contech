@@ -215,6 +215,12 @@ header {
 
 }
 
+#sobre a {
+width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
 #sobre {
     width: 100%;
     display: flex;

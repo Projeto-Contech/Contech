@@ -227,6 +227,11 @@ header {
  
 }
 
+.call-to-action a {
+    text-decoration: none;
+    color: white;
+}
+
 .cta-button {
     background-color: #3066BE;
     color: var(--color-text-light);

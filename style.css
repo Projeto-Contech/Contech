@@ -208,8 +208,15 @@ header {
     align-items: baseline;
 }
 
+#sobre a,
+#newsletter a {
+width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
 #sobre button:hover {
-    width: 42%;
+    width: 41%;
     font-size: 30px;
     background-color: #244f96;
 
@@ -1020,8 +1027,8 @@ footer .container-grid {
 
     .campo,
     .campo-descricao {
-    width: 100%;
-}
+        width: 100%;
+    }
 }
 
 

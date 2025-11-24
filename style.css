@@ -189,27 +189,20 @@ header {
 }
 
 #sobre button {
-    width: 40%;
-    background: local;
-    background-color: #3066BE;
-    padding: 2%;
-
-
-    font-size: 28px;
-    letter-spacing: 1px;
-
-    font-family: "Bebas";
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-
-    transition: background-color 500ms;
-
-
-    margin-top: 8%;
-    align-items: baseline;
-}
+        background-color: #3066BE;
+        color: var(--color-text-light);
+        border: none;
+        padding: 15px 40px;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s; 
+        font-family: "Bebas";
+    
+        letter-spacing: 1px;
+    }
 
 #sobre a,
 #newsletter a {
@@ -225,7 +218,8 @@ width: 100%;
 
 }
 
-#sobre {
+#sobre, 
+ .texto-img {
     width: 100%;
     display: flex;
 
@@ -361,29 +355,24 @@ width: 100%;
 
 
 .textos button {
-    width: 30%;
-    background: local;
     background-color: #3066BE;
-    padding: 1%;
-
-    font-size: 28px;
-    letter-spacing: 1px;
-
-    font-family: "Bebas";
-    color: white;
-    cursor: pointer;
+    color: var(--color-text-light);
     border: none;
+    padding: 15px 40px;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+    cursor: pointer;
     border-radius: 10px;
-
-    transition: background-color 500ms;
+    transition: background-color 0.3s; 
+    font-family: "Bebas";
     margin-top: 5%;
 }
 
 
 .textos button:hover {
-    width: 31%;
-    font-size: 30px;
-    background-color: #244f96;
+
+    background-color: #215486;
 
 }
 
@@ -727,11 +716,7 @@ footer .container-grid {
         align-items: center;
     }
 
-    .texto-button {
-        display: none;
-    }
-
-    #sobre img {
+    .texto-img {
         display: none;
     }
 
@@ -751,14 +736,26 @@ footer .container-grid {
     }
 
     #sobre button {
-        width: 30%;
+        background-color: #3066BE;
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        font-size: 1.5em;
+        font-weight: 300;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s; 
+        font-family: "Bebas";
+    
+        letter-spacing: 1px;
+
         display: flex;
         align-items: center;
         justify-content: center;
-        justify-self: center;
-        font-size: 24px;
-        margin-top: 4%;
-        padding: 1%
+
+        margin-top: 5%;
+
     }
 
     #sobre .p2 img {
@@ -961,11 +958,6 @@ footer .container-grid {
 
     }
 
-    .textos button {
-        width: 60%;
-        font-size: 24px;
-    }
-
 
 }
 
@@ -1020,6 +1012,9 @@ footer .container-grid {
         margin-bottom: 2px;
     }
 
+    .textos button {
+        padding: 10px 30px;
+    }
 
     #contato {
         margin-bottom: unset;
@@ -1079,10 +1074,12 @@ footer .container-grid {
     }
 
     #sobre img {
-        width: 60%;
-        margin: auto;
+        width: 50%;
     }
 
+    #sobre button {
+        margin: 5%;
+    }
     #sobre p {
         width: 90%;
         margin: 0 auto;
@@ -1094,9 +1091,6 @@ footer .container-grid {
      
     }
 
-    .textos button {
-        font-size: 1.3em;
-    }
 
     .container-cards {
         flex-wrap: nowrap;
@@ -1121,6 +1115,9 @@ footer .container-grid {
         margin-right: 30px;
     }
 
+    .textos button {
+        width: 70%;
+    }
 
     #contato h2 {
         color: black;
@@ -1152,11 +1149,11 @@ footer .container-grid {
     }
 
     .conteudo-banner p {
-        font-size: 16px;
+        font-size: 1.6em;
     }
 
     .textos button {
-        padding: 1%;
+        padding: 5%;
         width: 70%;
     }
 
